@@ -1,4 +1,5 @@
 package org.example.paymentservice.paymentgateways;
 
-public class PaymentGateway {
+public interface PaymentGateway {
+    public String generatePaymentLink(String email, String phoneNumber, Long amount, String orderId);
 }
